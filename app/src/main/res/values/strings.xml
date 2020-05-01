@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HexKey</string>
+    <string name="title">Hex Decoder</string>
+    <string name="encodeScreenButton">Encode</string>
+    <string name="decodeScreenButton">Decode</string>
+    <string name="hintDecode">Insert HEX here.</string>
+    <string name="decode">Decode HEX</string>
+    <string name="decodeButton">Decode</string>
+    <string name="key9label">Key[9]</string>
+    <string name="key8label">Key[8]</string>
+    <string name="key7label">Key[7]</string>
+    <string name="key6label">Key[6]</string>
+    <string name="key5label">Key[5]</string>
+    <string name="key4label">Key[4]</string>
+    <string name="encode">Encode HEX</string>
+</resources>

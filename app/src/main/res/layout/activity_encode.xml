@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Encode"
+    android:id="@+id/layout">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/anchor"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="30dp"
+        android:text="@string/encode"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+
+
+    <Button
+        android:id="@+id/encodeScreenButton"
+        android:layout_width="200dp"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onEncode"
+        android:text="@string/encodeScreenButton"
+        tools:ignore="OnClick" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/Word9label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:text="@string/key9label"
+
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:padding="10dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/Word8label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:text="@string/key8label"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:padding="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/Word7label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:text="@string/key7label"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:padding="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/Word6label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:text="@string/key6label"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:padding="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/Word5label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:text="@string/key5label"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:padding="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/Word4label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:text="@string/key4label"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:padding="10dp"
+
+            />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/Word9"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:padding="10dp"
+            android:autofillHints="Key 9 here."
+            app:met_mask="####"/>
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/Word8"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+
+            android:layout_row="1"
+            android:layout_column="1"
+            android:padding="10dp"
+            app:met_mask="####"
+            android:autofillHints="Key 8 here." />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:autofillHints="Key 7 here."
+            android:id="@+id/Word7"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+
+            android:paddingTop="18dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:padding="10dp"
+            app:met_mask="####"
+            />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/Word6"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:padding="10dp"
+            app:met_mask="####"
+            android:autofillHints="Key 6 here." />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:autofillHints="Key 5 here."
+            android:id="@+id/Word5"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:textAlignment="center"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+
+            android:textSize="20sp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:padding="10dp"
+            app:met_mask="####"
+            />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:autofillHints="Key 4 here."
+            android:id="@+id/Word4"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:padding="10dp"
+            app:met_mask="####"
+            />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/encodedKey"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="30dp"
+        android:textAlignment="center"
+        android:layout_below="@id/encodeScreenButton"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

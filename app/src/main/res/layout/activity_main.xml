@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="125sp"
+        android:text="@string/title"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:paddingTop="50dp"/>
+
+    <Button
+        android:id="@+id/encodeScreenButton"
+        android:layout_width="200sp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_height="150sp"
+        android:layout_marginTop="50dp"
+        android:onClick="onEncodeScreen"
+        android:text="@string/encodeScreenButton" />
+
+    <Button
+        android:id="@+id/decodeScreenButton"
+        android:layout_width="200sp"
+        android:layout_below="@+id/encodeScreenButton"
+        android:layout_centerHorizontal="true"
+        android:layout_height="150sp"
+        android:layout_marginTop="50dp"
+        android:onClick="onDecodeScreen"
+        android:text="@string/decodeScreenButton" />
+
+</RelativeLayout>
